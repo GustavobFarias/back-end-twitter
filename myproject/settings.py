@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-nh-q&v8!snx9+%r*d3*d)6%(!42jmmeyztny51diy-ten&!9j-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'twitter-api.herokuapp.com', 'gfarias.pythonanywhere.com']
-
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -39,8 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "rest_framework",
     "rest_framework_simplejwt",
-    "accounts",
+    'cadastro',
+    'twitter',
 ]
+
+AUTH_USER_MODEL = 'twitter.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
