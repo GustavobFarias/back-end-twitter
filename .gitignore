@@ -1,0 +1,14 @@
+# Arquivos do Django
+*.pyc
+__pycache__/
+db.sqlite3
+
+# Arquivos de ambiente
+.env
+venv/
+
+# Arquivos de migração desnecessários
+*.log
+
+# Arquivos coletados (não versionar)
+staticfiles/
